@@ -71,6 +71,11 @@ tasks.getByName<KotlinCompile>("compileTestKotlin") {
     kotlinOptions.jvmTarget = javaVersion4Kotlin
 }
 
+val mainClass = "fr.isima.server.ServerKt"
 tasks.getByName<BootJar>("bootJar") {
-    mainClassName = "fr.isima.server.ServerKt"
+    mainClassName = mainClass
+}
+
+application {
+    mainClassName = mainClass
 }
