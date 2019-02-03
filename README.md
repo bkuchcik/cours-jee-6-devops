@@ -7,3 +7,9 @@
 # Version deployée de l'application
 
 [Display-quote](https://display-quote.herokuapp.com/main)
+
+# Sujet du tp final
+
+Voici le sujet du tp final, assez tôt pour que vous puissiez commencer et que nous échangions sur les derniers cours.
+
+[Tp final](https://docs.google.com/document/d/e/2PACX-1vQf8xjLLA6k1AYByIrpM3SGUa4uxnBtOMvfD_ubLmBObNq2sC3cb3zmODAqOC-ClOvZaEwNYUe-UPmK/pub)
