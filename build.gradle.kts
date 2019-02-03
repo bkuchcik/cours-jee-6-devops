@@ -1,8 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 import org.springframework.boot.gradle.tasks.run.BootRun
 
 plugins {
-    war
+    application
     id("org.jetbrains.kotlin.jvm") version "1.3.11"
     id("org.springframework.boot") version "2.1.2.RELEASE"
     id("org.jetbrains.kotlin.plugin.allopen") version "1.3.11"
@@ -68,4 +69,8 @@ tasks.getByName<KotlinCompile>("compileKotlin") {
 }
 tasks.getByName<KotlinCompile>("compileTestKotlin") {
     kotlinOptions.jvmTarget = javaVersion4Kotlin
+}
+
+tasks.getByName<BootJar>("bootJar") {
+    mainClassName = "fr.isima.server.ServerKt"
 }
