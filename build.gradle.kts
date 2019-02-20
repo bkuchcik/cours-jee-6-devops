@@ -3,10 +3,10 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 import org.springframework.boot.gradle.tasks.run.BootRun
 
 plugins {
-    application
-    id("org.jetbrains.kotlin.jvm") version "1.3.11"
+    war
+    id("org.jetbrains.kotlin.jvm") version "1.3.21"
     id("org.springframework.boot") version "2.1.2.RELEASE"
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.3.11"
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.3.21"
 }
 
 group = "fr.isima"
