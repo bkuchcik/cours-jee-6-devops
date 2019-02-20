@@ -4,6 +4,7 @@ import org.springframework.boot.gradle.tasks.run.BootRun
 
 plugins {
     war
+    application
     id("org.jetbrains.kotlin.jvm") version "1.3.21"
     id("org.springframework.boot") version "2.1.2.RELEASE"
     id("org.jetbrains.kotlin.plugin.allopen") version "1.3.21"
@@ -73,5 +74,9 @@ tasks.getByName<KotlinCompile>("compileTestKotlin") {
 
 val mainClass = "fr.isima.server.ServerKt"
 tasks.getByName<BootJar>("bootJar") {
+    mainClassName = mainClass
+}
+
+application {
     mainClassName = mainClass
 }
