@@ -75,7 +75,3 @@ val mainClass = "fr.isima.server.ServerKt"
 tasks.getByName<BootJar>("bootJar") {
     mainClassName = mainClass
 }
-
-application {
-    mainClassName = mainClass
-}
